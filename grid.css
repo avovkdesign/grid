@@ -1,0 +1,40 @@
+
+/* ===== GRID ==================================================== */
+
+.grid{width:90%;margin-left:auto;margin-right:auto}
+.grid [class*=col]{width:100%;margin-left:0}/*;margin-bottom:20px}*/
+
+
+@media screen and (min-width:1024px) {
+
+	.grid{width:100%}
+	.grid [class*=col]{float:left}
+
+	.grid:after,.grid:before,.grid .newrow:before{display:table;line-height:0;content:""}
+	.grid:after,.grid .newrow,.grid .newrow:before{clear:both}
+
+	.grid [class*=col]{margin-left:1.694915254%;margin-right:0}
+	.grid .newrow, .grid [class*=col]:first-of-type {margin-left:0}
+
+	.grid .col1{width:6.779661017%}
+	.grid .col2{width:15.25423729%}
+	.grid .col3{width:23.72881356%}
+	.grid .col4{width:32.20338983%}
+	.grid .col5{width:40.6779661%}
+	.grid .col6{width:49.15254237%}
+	.grid .col7{width:57.62711864%}
+	.grid .col8{width:66.10169492%}
+	.grid .col9{width:74.57627119%}
+	.grid .col10{width:83.05084746%}
+	.grid .col11{width:91.52542373%}
+	.grid .col12{width:100%}
+
+}
+
+/* =============================================================== */
+
+
+.grid [class*="col"] {background-color: darkgrey;margin-top:10px;margin-bottom:10px}
+
+.mybox {background-color: green}
+.mybox [class*="col"] {background-color: yellow}
